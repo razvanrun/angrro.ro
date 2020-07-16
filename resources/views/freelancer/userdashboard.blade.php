@@ -9,7 +9,7 @@
 <section id="BrowseCategories">
     <div class="container">
         <h2 class="h2 text-center">Cauta Anunturi</h2>
-        <h4 class="h4 text-center mb-5 text-muted">Gaseste Inspiratia pentru Afacerea sau Familia ta</h4>
+        <h4 class="h4 text-center mb-5 text-muted">Gaseste Inspiratia pentru Afacerea si Familia ta</h4>
         <div class="row mb-5">
             <div class="col-sm text-center hvr-grow"><a href="/userdashboard?cat=1">
                <img  class="icon-category"  src="/storage/assets/handshake-icon-flat-style_169241-482.jpg" alt="">
