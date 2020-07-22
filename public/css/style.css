@@ -77,7 +77,7 @@ img#mylogo {
 */
 
 .jumbotron {
-    background-image: url("https://i.ibb.co/7CxHP4v/jumbotron.jpg");
+    background-image: url('https://i.ibb.co/7CxHP4v/jumbotron.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
