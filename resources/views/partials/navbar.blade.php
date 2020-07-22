@@ -1,6 +1,6 @@
  <nav class="navbar navbar-expand-sm navbar-light navbar-laravel">
         <a class="navbar-brand" href="{{ url('/') }}">
-           <img src="{{ asset('storage/assets/logo.jpeg') }}" id="mylogo">
+           <img src="https://i.ibb.co/GvP1KsC/logo.jpg" id="mylogo">
         </a>
         <!--  -->
         <!-- <div class="center search-dashboard">
