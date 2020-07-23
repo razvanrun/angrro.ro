@@ -76,6 +76,12 @@ img#mylogo {
 *
 */
 
+@media only screen and (max-width: 700px) {
+.jumbotron {
+  margin-top:300px;
+}
+}
+
 .jumbotron {
     background-image: url('https://i.ibb.co/7CxHP4v/jumbotron.jpg');
     background-size: cover;

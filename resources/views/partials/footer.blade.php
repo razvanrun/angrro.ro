@@ -7,6 +7,16 @@
 					<li><a href="/">Acasa</a></li>
 					<li><a href="/login">Autentificare</a></li>
 					<li><a href="#">Inregistrare</a></li>
+					<li><a href="#">Termeni si Conditii</a></li>
+
+				</ul>
+			</div>
+			<div class="col-sm">
+				<h5 class="h5 text-white">Social Media</h5>
+				<ul>
+					<li><a href="#">Acceseaza grupul pe facebook!</a></li>
+					<li><a href="#">Pagina Facebook</a></li>
+					<li><a href="#">Instagram</a></li>
 				</ul>
 			</div>
 			<div class="col-sm">
