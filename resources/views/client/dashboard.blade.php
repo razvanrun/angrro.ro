@@ -7,12 +7,12 @@
 
 
 @section('content')
-<div class="container">
+<div class="container margine-sus">
     <div class="row justify-content-center">
-        <div class="col-md-10 my-5">            
+        <div class="col-md-10 my-5">
             @include('partials.alert')
-            <div class="card card-default">  
-                <div class="card-header"><h3 class="h3 d-inline-block text-info">Client Dashboard</h3><span class="float-right"><a href="/jobs/create"><button class="btn btn-info">Post a Job</button></a></span></div>
+            <div class="card card-default">
+                <div class="card-header"><h3 class="h3 d-inline-block text-info">Panou Vanzator</h3><span class="float-right"><a href="/jobs/create"><button class="btn btn-info">Post a Job</button></a></span></div>
                 <div class="card-body pt-0 table-responsive">
                    @if(count($jobs) > 0)
                       <table class="table table-striped " id="jobTable">
@@ -20,7 +20,7 @@
                             <tr>
                               <th>Job</th>
                               <th>Date Posted</th>
-                              <th>Posted By</th>                  
+                              <th>Posted By</th>
                               <th></th>
                               <th></th>
                             </tr>
@@ -51,5 +51,3 @@
     </div>
 </div>
 @endsection
-
-
