@@ -69,6 +69,8 @@ class FreelancerController extends Controller
         return view('freelancer.userdashboard', compact('categories', 'jobs', 'cat', 'search'));
     }
 
+
+
     public function profile() {
         if(Auth()->user()->role !== 1) {
             return redirect('/')->with('error', 'Unauthorize Page');
@@ -126,9 +128,9 @@ class FreelancerController extends Controller
             $image = $request->file('profilepicture');
             $type = pathinfo($image, PATHINFO_EXTENSION);
             $filename = time().'.'.$image->GetClientOriginalExtension();
-            $location = $request->file('profilepicture')->storeAs('public/photo', $filename);
-            $location = storage_path('photo/', $filename);
-            Image::make($image->getRealPath())->resize(128, 128)->save($type, $location);
+            $location = $request->file('profilepicture')->storeAs('images/', $filename);
+            $location = storage_path('images/', $filename);
+            image::make($image->getRealPath())->resize(128, 128)->save($type, $location);
             $profile->photo = $filename;
         }
 
@@ -145,14 +147,14 @@ class FreelancerController extends Controller
             $image = $request->file('profilepicture');
             $type = pathinfo($image, PATHINFO_EXTENSION);
             $filename = time().'.'.$image->GetClientOriginalExtension();
-            $location = $request->file('profilepicture')->storeAs('public/photo', $filename);
-            $location = storage_path('photo/', $filename);
+            $location = $request->file('profilepicture')->storeAs('images/', $filename);
+            $location = storage_path('images/', $filename);
             Image::make($image->getRealPath())->resize(128, 128)->save($type, $location);
             $profile->photo = $filename;
         }
         if($request->hasFile('profilepicture')) {
             dd($profile->photo);
-            Storage::delete('public/photo/' . $profile->photo);
+            Storage::delete('images/' . $profile->photo);
             $profile->photo = $filename;
         }
         $profile->save();

@@ -23,7 +23,7 @@ Angroo.ro - Cumpara si Vinde Angro pe Angrro.ro
                   <h5 class="h5 text-muted">Animale de Companie</h5></a>
                 </div>
                 <div class="col-sm text-center hvr-grow"><a href="/userdashboard?cat=3">
-                  <img  class="icon-category"  src="https://i.ibb.co/1TRsLS0/baby-twin-flat-icon-vector-4961010.jpg" alt="">
+                  <img  class="icon-category"  src="https://i.ibb.co/TcPw0SP/baby-twin-flat-icon-vector-4961010.png" alt="">
                     <h5 class="h5 text-muted">Nou Nascuti</h5></a>
                 </div>
                 <div class="col-sm text-center hvr-grow"><a href="/userdashboard?cat=4">
@@ -41,7 +41,7 @@ Angroo.ro - Cumpara si Vinde Angro pe Angrro.ro
                     <h5 class="h5 text-muted">Casa si Gradina</h5></a>
                 </div>
                 <div class="col-sm text-center hvr-grow"><a href="/userdashboard?cat=7">
-                  <img  class="icon-category"  src="https://i.ibb.co/8PGhvyk/829497-beauty-512x512.png" alt="">
+                  <img  class="icon-category"  src="https://i.ibb.co/hMg7xD9/beauty.png" alt="">
                     <h5 class="h5 text-muted">Cosmetice</h5></a>
                 </div>
                 <div class="col-sm text-center hvr-grow"><a href="/userdashboard?cat=8">
@@ -69,7 +69,7 @@ Angroo.ro - Cumpara si Vinde Angro pe Angrro.ro
         </div>
         <div class="child">
           <div class="text-center"><a href="/userdashboard?cat=3">
-            <img  class="icon-category-mobile"  src="https://i.ibb.co/1TRsLS0/baby-twin-flat-icon-vector-4961010.jpg" alt="">
+            <img  class="icon-category-mobile"  src="https://i.ibb.co/TcPw0SP/baby-twin-flat-icon-vector-4961010.png" alt="">
               <h5 class="h5 text-muted">Nou Nascuti</h5></a>
           </div>
         </div>
@@ -93,7 +93,7 @@ Angroo.ro - Cumpara si Vinde Angro pe Angrro.ro
         </div>
         <div class="child">
           <div class="text-center"><a href="/userdashboard?cat=7">
-            <img  class="icon-category-mobile"  src="https://i.ibb.co/8PGhvyk/829497-beauty-512x512.png" alt="">
+            <img  class="icon-category-mobile"  src="https://i.ibb.co/hMg7xD9/beauty.png" alt="">
               <h5 class="h5 text-muted">Cosmetice</h5></a>
           </div>
         </div>
