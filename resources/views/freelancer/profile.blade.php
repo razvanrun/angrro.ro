@@ -39,13 +39,7 @@
                         </div>
                         <div class="modal-body editworksbody">
                           <div class="form-group">
-                            <input type="file" class="form-control @error('avatar') is-invalid @enderror" name="avatar">
-
-                            @error('avatar')
-                            <span class="invalid-feedback" role="alert" ></span>
-                            <strong>{{ $message }}</strong>
-                            @enderror
-
+                            <input type="file" class="form-control-file text-center" id="profilepicture" name="profilepicture" aria-describedby="fileHelp">
                           </div>
                         </div>
                         <div class="modal-footer">
@@ -56,6 +50,7 @@
                     </div>
                   </div>
                 </div>
+
                 </div>
                 <div class="col-md-10 pl-5">
                     <h3 class="h3 profile-name-gap text-info d-inline-block">{{$user->name}}</h3>
