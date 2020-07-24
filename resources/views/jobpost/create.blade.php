@@ -7,11 +7,11 @@
 
 
 @section('content')
-<div class="container">
+<div class="container margine-sus">
     <div class="row justify-content-center">
-        <div class="col-md-10 my-5">            
+        <div class="col-md-10 my-5">
             @include('partials.alert')
-            <div class="card card-default">  
+            <div class="card card-default">
                 <div class="card-header"><h3 class="h3 text-center text-info">Creaza Anunt</h3></div>
                 <div class="card-body">
                   <form method="POST" action="/jobs">
@@ -69,7 +69,7 @@
 </div>
 @endsection
 
-@section('jsplugins') 
+@section('jsplugins')
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
   <script>
       CKEDITOR.replace( 'article-ckeditor' );
