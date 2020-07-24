@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->string('avatar')->default('default-avatar.jpg');
+            $table->string('avatar')->default('/images/default-avatar.jpg');
         });
     }
 
