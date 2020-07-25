@@ -51,7 +51,7 @@
         	<ul class="list-unstyled">
         		<li class="mb-2 h5 text-info">About the Client</li>
         		<li class="mb-2">
-        			<span class="text-primary">Istric Anuturi: </span>{{$jobcount}} anunturi postate</li>
+        			<span class="text-primary">Istric Vanzator: </span>{{$jobcount}} anunturi postate</li>
         		<li class="mb-2">
         			<span class="text-primary">Membru din: </span>{{date("M Y", strtotime($job->user->created_at))}}
         		</li>
