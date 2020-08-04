@@ -49,7 +49,7 @@
         	</ul>
         	<hr>
         	<ul class="list-unstyled">
-        		<li class="mb-2 h5 text-info">About the Client</li>
+        		<li class="mb-2 h5 text-info">Despre Vanzator</li>
         		<li class="mb-2">
         			<span class="text-primary">Istric Vanzator: </span>{{$jobcount}} anunturi postate</li>
         		<li class="mb-2">

@@ -10,7 +10,7 @@
     </div>
     <div class="child">
       <div class="text-center"><a href="/userdashboard?cat=2">
-        <img  class="icon-category-mobile"  src="https://i.ibb.co/L6Chsfh/images-3.png" alt="">
+        <img  class="icon-category-mobile"  src="https://ibb.co/PYbRbcP" alt="">
         <h5 class="h5 text-muted">Animale de Companie</h5></a>
       </div>
     </div>
