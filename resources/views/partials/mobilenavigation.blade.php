@@ -10,7 +10,7 @@
     </div>
     <div class="child">
       <div class="text-center"><a href="/userdashboard?cat=2">
-        <img  class="icon-category-mobile"  src="https://ibb.co/PYbRbcP" alt="">
+        <img  class="icon-category-mobile"  src="https://i.ibb.co/W3dQdkM/central-asian-shepherd-dog-flat-icon-doggy-head-vector-18623218.jpg" alt="">
         <h5 class="h5 text-muted">Animale de Companie</h5></a>
       </div>
     </div>

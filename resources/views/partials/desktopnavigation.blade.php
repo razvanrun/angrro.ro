@@ -8,7 +8,7 @@
                <h5 class="h5 text-muted">Servicii & Oferte</h5></a>
             </div>
             <div class="col-sm text-center hvr-grow"><a href="/userdashboard?cat=2">
-              <img  class="icon-category"  src="https://i.ibb.co/L6Chsfh/images-3.png" alt="">
+              <img  class="icon-category"  src="https://i.ibb.co/W3dQdkM/central-asian-shepherd-dog-flat-icon-doggy-head-vector-18623218.jpg" alt="">
               <h5 class="h5 text-muted">Animale de Companie</h5></a>
             </div>
             <div class="col-sm text-center hvr-grow"><a href="/userdashboard?cat=3">
