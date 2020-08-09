@@ -12,15 +12,15 @@
         <div class="col-md-10 my-5">
             @include('partials.alert')
             <div class="card card-default">
-                <div class="card-header"><h3 class="h3 d-inline-block text-info">Panou Vanzator</h3><span class="float-right"><a href="/jobs/create"><button class="btn btn-info">Post a Job</button></a></span></div>
+                <div class="card-header"><h3 class="h3 d-inline-block text-info">Panou Vanzator</h3><span class="float-right"><a href="/jobs/create"><button class="btn btn-info">Posteaza Anunt</button></a></span></div>
                 <div class="card-body pt-0 table-responsive">
                    @if(count($jobs) > 0)
                       <table class="table table-striped " id="jobTable">
                           <thead>
                             <tr>
-                              <th>Job</th>
-                              <th>Date Posted</th>
-                              <th>Posted By</th>
+                              <th>Anunt</th>
+                              <th>Data Postarii</th>
+                              <th>Postat De</th>
                               <th></th>
                               <th></th>
                             </tr>
@@ -40,7 +40,7 @@
                           </tr>
                           @endforeach
                         @else
-                            <p class="mt-5 text-center mb-5">You don't have any job post</p>
+                            <p class="mt-5 text-center mb-5">Nu ai postat nici-un anunt inca!</p>
                         @endif
                       </tbody>
                     </table>
