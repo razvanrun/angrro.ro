@@ -144,7 +144,7 @@ section#vectorimages {
 */
 
 footer {
-    background-color: #4267b2;
+    background-color: #2F74F1;
 }
 
 footer li {
@@ -362,7 +362,7 @@ article {
 @media only screen and (max-width: 720px) {
   .search-gap {
     margin-top: 300px;
-  }  
+  }
 }
 
 .form-dashboard {
