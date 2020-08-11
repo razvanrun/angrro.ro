@@ -348,10 +348,21 @@ article {
     width: 100px;
     height: 40px;
   }
+
 }
 
 .search_button {
     float: right;
+}
+
+.search-gap {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 720px) {
+  .search-gap {
+    margin-top: 300px;
+  }  
 }
 
 .form-dashboard {
