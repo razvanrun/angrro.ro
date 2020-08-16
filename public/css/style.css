@@ -766,3 +766,9 @@ height: 200px;
   margin-left: 5px;
   margin-right: 5px;
 }
+
+@media only screen and (max-width:720px;) {
+  .mobile-gap {
+    margin-top: 250px;
+  }
+}

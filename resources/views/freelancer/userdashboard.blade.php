@@ -11,7 +11,7 @@
 @include('partials.mobilenavigation')
 
 
-<div class="container">
+<div class="container mobile-gap">
     <div class="row justify-content-center mobile-gap">
         <div class="col-md-10 my-5">
             @include('partials.alert')
