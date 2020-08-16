@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd056a3a304328395fd3f5fece06d190",
+    "content-hash": "bdafe8be86ce085eca33b6a1a0ed7191",
     "packages": [
         {
             "name": "adyg/php-imgur-api-client",

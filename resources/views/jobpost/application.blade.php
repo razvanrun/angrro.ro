@@ -7,11 +7,11 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-       <div class="col-md-10 my-5">            
+       <div class="col-md-10 my-5">
             @include('partials.alert')
-            <div class="card card-default">  
+            <div class="card card-default">
                 <div class="card-header">
-                	<h4 class="h4 text-muted">JOB DETAILS</h4>
+                	<h4 class="h4 text-muted">Detalii Anunt</h4>
                 </div>
                 <div class="card-body pt-0 table-responsive py-3">
                 	<div class="row">
@@ -23,31 +23,31 @@
 	                   		<ul class="list-unstyled">
 	                   			<li class="mb-2">
 				        			<span class="text-success">
-				        				<i class="fas fa-dollar-sign"></i> Budget : 
+				        				<i class="fas fa-dollar-sign"></i> Budget :
 				        			</span>
 				        			 &#36; {{number_format($job->budget)}}
 				        		</li>
 				        		<li class="mb-2">
 				        			<span class="text-success">
-				        				<i class="fas fa-clock"></i> Posted: 
+				        				<i class="fas fa-clock"></i> Posted:
 				        			</span>
 				        			{{$job->created_at->diffForHumans()}}
 				        		</li>
 				        		<li class="mb-2">
 				        			<span class="text-success">
-				        				<i class="fas fa-briefcase"></i> Position : 
+				        				<i class="fas fa-briefcase"></i> Position :
 				        			</span>
 				        			{{ucwords($job->position_type)}}
 				        		</li>
 				        		<li class="mb-2">
 				        			<span class="text-success">
-				        				<i class="fas fa-hourglass-end"></i> Project Duration:  
+				        				<i class="fas fa-hourglass-end"></i> Project Duration:
 				        			</span>
 				        			{{ ucwords($job->project_duration) }}
 				        		</li>
 				        		<li class="mb-2">
 				        			<span class="text-success">
-				        				<i class="fas fa-tags"></i> Category: 
+				        				<i class="fas fa-tags"></i> Category:
 				        			</span>
 				        			{{ ucwords($job->category->category_name) }}
 				        		</li>
@@ -56,7 +56,7 @@
                    </div>
                 </div>
             </div>
-            <div class="card card-default mt-5">  
+            <div class="card card-default mt-5">
             	<form action="{{url("/job/application/$job->id/store")}}" method="POST">
             		{{ csrf_field() }}
 	                <div class="card-header">
@@ -86,11 +86,10 @@
 			$('article').readmore({
 			  afterToggle: function(trigger, element, expanded) {
 			    if(! expanded) { // The "Close" link was clicked
-			      $('html, body').animate( { scrollTop: element.offset().top }, {duration: 100 } );			  
-			    } 
+			      $('html, body').animate( { scrollTop: element.offset().top }, {duration: 100 } );
+			    }
 			  }
 			});
 		});
 	</script>
 @endsection
-

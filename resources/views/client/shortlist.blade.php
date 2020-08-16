@@ -15,12 +15,7 @@
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item col-sm-6 p-0 text-center">
                         <a class="nav-link active py-4" data-toggle="tab" href="#tabs-1" role="tab">
-                            <h3 class="m-0">Job Post</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item col-sm-6 p-0 text-center">
-                        <a class="nav-link py-4" data-toggle="tab" href="#tabs-2" role="tab">
-                            <h3 class="m-0">Review Proposals</h3>
+                            <h3 class="m-0">Anunt</h3>
                         </a>
                     </li>
                 </ul>
@@ -39,29 +34,29 @@
                                         <span class="text-success">
                                             <i class="fas fa-dollar-sign"></i> Budget :
                                         </span>
-                                         &#36; {{number_format($job->budget)}}
+                                         {{number_format($job->budget)}} LEI
                                     </li>
                                     <li class="mb-2">
                                         <span class="text-success">
-                                            <i class="fas fa-clock"></i> Posted:
+                                            <i class="fas fa-clock"></i> Postat:
                                         </span>
                                         {{$job->created_at->diffForHumans()}}
                                     </li>
                                     <li class="mb-2">
                                         <span class="text-success">
-                                            <i class="fas fa-briefcase"></i> Position :
+                                            <i class="fas fa-briefcase"></i> Tip :
                                         </span>
                                         {{ucwords($job->position_type)}}
                                     </li>
                                     <li class="mb-2">
                                         <span class="text-success">
-                                            <i class="fas fa-hourglass-end"></i> Project Duration:
+                                            <i class="fas fa-hourglass-end"></i> Timp de expirare:
                                         </span>
                                         {{ ucwords($job->project_duration) }}
                                     </li>
                                     <li class="mb-2">
                                         <span class="text-success">
-                                            <i class="fas fa-tags"></i> Category:
+                                            <i class="fas fa-tags"></i> Categorie:
                                         </span>
                                         {{ ucwords($job->category->category_name) }}
                                     </li>
