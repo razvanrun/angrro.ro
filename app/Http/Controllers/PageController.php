@@ -12,8 +12,10 @@ use App\Work;
 class PageController extends Controller
 {
    public function index() {
-	 	
+
 		return view('index');
-	}  
+	}
+
+
 
 }

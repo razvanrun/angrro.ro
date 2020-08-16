@@ -7,7 +7,7 @@
 					<li><a href="/">Acasa</a></li>
 					<li><a href="/login">Autentificare</a></li>
 					<li><a href="#">Inregistrare</a></li>
-					<li><a href="#">Termeni si Conditii</a></li>
+					<li><a href="/termeni">Termeni si Conditii</a></li>
 
 				</ul>
 			</div>
@@ -22,14 +22,16 @@
 			<div class="col-sm">
 				<h5 class="h5 text-white">Categorii</h5>
 				<ul>
-					<li><a href="#">Graphics &amp; Design</a></li>
-					<li><a href="#">Programming &amp; Tech</a></li>
-					<li><a href="#">Digital Marketing</a></li>
-					<li><a href="#">Writing &amp; Translation</a></li>
-					<li><a href="#">Video &amp; Animation</a></li>
-					<li><a href="#">Admin Support</a></li>
-					<li><a href="#">Architecture &amp; Engineering</a></li>
-					<li><a href="#">Management &amp; Finance</a></li>
+					<li><a href="/userdashboard?cat=1">Locuri de Munca</a></li>
+					<li><a href="/userdashboard?cat=2">Electronice & Electrocasnice</a></li>
+					<li><a href="/userdashboard?cat=3">Cosmetice</a></li>
+					<li><a href="/userdashboard?cat=4">Casa & Gradina</a></li>
+					<li><a href="/userdashboard?cat=5">Imobiliare</a></li>
+					<li><a href="/userdashboard?cat=6">Agronomie</a></li>
+					<li><a href="/userdashboard?cat=7">Nou Nascuti</a></li>
+					<li><a href="/userdashboard?cat=8">Animale de Companie</a></li>
+					<li><a href="/userdashboard?cat=9">Servicii si Oferte</a></li>
+
 				</ul>
 			</div>
 

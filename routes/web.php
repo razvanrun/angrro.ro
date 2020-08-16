@@ -11,6 +11,12 @@
 |
 */
 
+// Comon Pages
+Route::get('/termeni', function () {
+    return view('termeni');
+});
+
+
 
 Auth::routes();
 

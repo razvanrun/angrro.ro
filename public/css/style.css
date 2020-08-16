@@ -751,3 +751,18 @@ height: 200px;
       top: -220px;
     }
 }
+
+.term-gap {
+  margin-top:100px;
+
+}
+
+.gap-par {
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.termeni-text-box {
+  margin-left: 5px;
+  margin-right: 5px;
+}
