@@ -15,6 +15,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "ozankurt/imgur-laravel": "^5.4",
+        "spatie/laravel-cookie-consent": "^2.12",
         "unisharp/laravel-filemanager": "~2.0"
     },
     "require-dev": {
