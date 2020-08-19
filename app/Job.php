@@ -17,3 +17,8 @@ class Job extends Model
         return $this->belongsToMany('App\Applicant', 'applicant_job', 'job_id', 'applicant_user_id');
     }
 }
+
+
+Route::get('/job', 'JobController@index');
+
+Route::post('/addimage','JobController@store')->name('addimage');
