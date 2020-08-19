@@ -135,7 +135,7 @@ class FreelancerController extends Controller
         }
 
         $profile->save();
-        return redirect('userdashboard');
+        return redirect('/userdashboard');
     }
      public function updatePhoto(Request $request) {
         if(Auth()->user()->role !== 1) {
