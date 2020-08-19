@@ -70,21 +70,9 @@ class JobController extends Controller
         $job->body = $request->input('body');
         $job->budget = $request->input('budget');
         $job->category_id = $request->input('category_id');
+        $job->position_type = $request->input('positionType');
         $job->project_duration = $request->input('project_duration');
         $job->user_id = auth()->user()->id;
-
-
-                if ($request->hasfile('positionType')) {
-                  $file = $request->file('positionType');
-                  $extension = $file->getClientOriginalExtension(); //getting image get_loaded_extensions
-                  $filename = time().'.'. $extension;
-                  $file->move('uploads/highlights/', $filename);
-                  $highlights->positionType = $filename;
-                } else {
-                  return $request;
-                  $highlights->positionType = '';
-                }
-
         $job->save();
 
         return redirect('/dashboard')->with('success', "<i class='fas fa-check fa-fw'></i> Job Posting Created");
@@ -158,7 +146,7 @@ class JobController extends Controller
         $job->body = $request->input('body');
         $job->budget = $request->input('budget');
         $job->category_id = $request->input('category_id');
-        // $job->position_type = $request->input('positionType');
+        $job->position_type = $request->input('positionType');
         $job->project_duration = $request->input('project_duration');
         $job->user_id = auth()->user()->id;
         $job->save();

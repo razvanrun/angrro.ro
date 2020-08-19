@@ -113,8 +113,3 @@ Route::post('/panel/categories/add', 'AdminController@addCategories');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-Route::get('/job', 'JobController@index');
-
-Route::post('/addimage','JobController@store')->name('addimage');

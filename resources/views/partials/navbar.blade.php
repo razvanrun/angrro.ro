@@ -51,6 +51,7 @@
                     <li class="nav-item">
                         <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/dashboard">Panou de Control</a>
                     </li>
+                    <li><a class="nav-link" href="https://angrro.ro/jobs/create"><button class="btn btn-sm align-middle btn-info" type="button">Posteaza Anunt</button></a></li>
 
                  </ul>
              @endif

@@ -40,7 +40,7 @@
 						    </div>
 					  </div>
 					  <div class="row">
-						  <!-- <div class="form-group col-md-6">
+						  <div class="form-group col-md-6">
 						    <label for="positionType">Disponibilitate</label>
 						    <select class="form-control" name="positionType" id="positionType">
 						    	   <option selected disabled value="0">Selecteaza Disponibilitate</option>
@@ -48,8 +48,8 @@
 								   <option value="Produs Limitat">Produs Limitat</option>
 								   <option value="Produs Nelimitat">Produs Nelimitat</option>
 						    </select>
-						  </div> -->
-              <div class="form-group col-md-6">
+						  </div>
+              <!-- <div class="form-group col-md-6">
                 <label for="positionType">Image</label>
                 <div class="imput-group">
                   <div class="custom-file">
@@ -57,7 +57,7 @@
                     <label class="custom-file-label">Alege Fisierul</label>
                   </div>
                 </div>
-              </div>
+              </div> -->
 						  <div class="form-group col-md-6">
 						    <label for="project_duration">Stare</label>
 						    <select class="form-control" id="project_duration" name="project_duration" id="project_duration">
