@@ -79,10 +79,10 @@ class JobController extends Controller
                   $extension = $file->getClientOriginalExtension(); //getting image get_loaded_extensions
                   $filename = time().'.'. $extension;
                   $file->move('uploads/highlights/', $filename);
-                  $highlights->image = $filename;
+                  $highlights->positionType = $filename;
                 } else {
                   return $request;
-                  $highlights->image = '';
+                  $highlights->positionType = '';
                 }
 
         $job->save();
