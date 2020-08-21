@@ -61,7 +61,7 @@ class JobController extends Controller
           'body' => 'required',
           'budget' => 'required',
           'category_id' => 'required',
-          'positionType' => ['required' , 'image' , 'mimes:png,jpg'],
+          'positionType' => ['required' , 'image' , 'mimes:png,jpg,jpeg'],
           'project_duration' => 'required'
       ]);
 
@@ -81,7 +81,7 @@ class JobController extends Controller
       $job->user_id = auth()->user()->id;
       $job->save();
 
-        return redirect('dashboard')->with('success', "<i class='fas fa-check fa-fw'></i> Job Posting Created");
+        return redirect('/dashboard')->with('success', "<i class='fas fa-check fa-fw'></i> Job Posting Created");
     }
 
     /**
