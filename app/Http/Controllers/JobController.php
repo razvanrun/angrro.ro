@@ -71,7 +71,7 @@ class JobController extends Controller
       if ($request->has("positionType")) {
           $image = $request->file("positionType");
           $imageName = Str::uuid() . '.' . $image->getClientOriginalExtension();
-          $image->move(public_path("storage/positionType"), $imageName);
+          $image->move("public/images", $imageName);
       }
 
       $job = new Job;
