@@ -18,8 +18,8 @@
 
            <p class="h5 text-success">Pret: {{number_format($job->budget)}} RON</p>
            {!! $job->body !!}
-           <img src="{{ asset($job->position_type) }}" />
-        </div>
+          <img src={{url('imagePath',$job->position_type)}}/>  
+      </div>
         <div class="col-md-3 h6" style="margin-top:170px;">
         	<ul class="list-unstyled">
         		<li class="mb-2">
