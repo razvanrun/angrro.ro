@@ -14,7 +14,7 @@
             <div class="card card-default">
                 <div class="card-header"><h3 class="h3 text-center text-info">Creaza Anunt</h3></div>
                 <div class="card-body">
-                  <form method="POST" action="/jobs">
+                  <form method="POST" action="/jobs" enctype="multipart/form-data" >
                   	{{ csrf_field() }}
                   	 <div class="form-group">
 					    <label for="title">Titlul Anuntului</label>
@@ -40,15 +40,15 @@
 						    </div>
 					  </div>
 					  <div class="row">
-						  <div class="form-group col-md-6">
-						    <label for="positionType">Disponibilitate</label>
-						    <select class="form-control" id="positionType" name="positionType" id="positionType">
-						    	   <option selected disabled value="0">Selecteaza Disponibilitate</option>
-			                       <option value="Produs Sezonier">Produs Sezonier</option>
-								   <option value="Produs Limitat">Produs Limitat</option>
-								   <option value="Produs Nelimitat">Produs Nelimitat</option>
-						    </select>
-						  </div>
+              <div class="form-group col-md-6">
+        								<label for="positionType">Image</label>
+        								<div class="imput-group">
+        									<div class="custom-file">
+        										<input type="file" name="positionType" class="custom-file-input" value="">
+        										<label class="custom-file-label">Alege Fisierul</label>
+        									</div>
+        								</div>
+        							</div>
 						  <div class="form-group col-md-6">
 						    <label for="project_duration">Stare</label>
 						    <select class="form-control" id="project_duration" name="project_duration" id="project_duration">
