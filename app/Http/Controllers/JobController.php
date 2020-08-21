@@ -81,7 +81,7 @@ class JobController extends Controller
       $job->user_id = auth()->user()->id;
       $job->save();
 
-        return redirect('/dashboard')->with('success', "<i class='fas fa-check fa-fw'></i> Job Posting Created");
+        return redirect('dashboard')->with('success', "<i class='fas fa-check fa-fw'></i> Job Posting Created");
     }
 
     /**
