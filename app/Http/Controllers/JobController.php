@@ -8,6 +8,8 @@ use App\Job;
 Use App\JobCategory;
 Use App\user;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
+
 
 class JobController extends Controller
 {
@@ -56,12 +58,13 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
+		//dd($request->positionType);
       $this->validate($request, [
           'title' => 'required',
           'body' => 'required',
           'budget' => 'required',
           'category_id' => 'required',
-          'positionType' => ['nullable', 'image', 'mimes:png,jpg'],
+          'positionType' =>  'mimes:jpeg,jpg,png,gif|required|max:10000',
           'project_duration' => 'required'
       ]);
 

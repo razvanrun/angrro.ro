@@ -14,7 +14,7 @@
             <div class="card card-default">
                 <div class="card-header"><h3 class="h3 text-center text-info">Creaza Anunt</h3></div>
                 <div class="card-body">
-                  <form method="POST" action="/jobs" enctype="multipart/form-data" >
+                  <form method="POST" action="{{ url('/jobs') }}" enctype="multipart/form-data" >
                   	{{ csrf_field() }}
                   	 <div class="form-group">
 					    <label for="title">Titlul Anuntului</label>
