@@ -61,7 +61,7 @@ class JobController extends Controller
           'body' => 'required',
           'budget' => 'required',
           'category_id' => 'required',
-          'positionType' => ['required' , 'image' , 'mimes:png,jpg,jpeg'],
+          'positionType' => ['nullable', 'image', 'mimes:png,jpg'],
           'project_duration' => 'required'
       ]);
 
