@@ -26,7 +26,7 @@
 
 <form action="/search" method="POST" role="search">
     {{ csrf_field() }}
-    <div class="input-group">
+    <div class="input-group search">
         <input type="text" class="form-control searchbox" name="q"
             placeholder="Search users"> <span class="input-group-btn">
             <button type="submit" class="btn btn-default searchbtn">
