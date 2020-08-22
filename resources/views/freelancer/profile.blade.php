@@ -29,7 +29,7 @@
                 <div class="modal fade" id="uploadphoto{{$user->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
-                      <form action="{{ url('/profile/uploadphoto')}}" method="POST" enctype="multipart/form-data">
+                      <form action="/profile/uploadphoto" method="POST" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="modal-header">
                           <h5 class="modal-title text-info" id="exampleModalLabel">Incarca Fotografie</h5>
