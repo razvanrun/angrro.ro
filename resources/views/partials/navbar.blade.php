@@ -77,7 +77,7 @@
             <ul class="navbar-nav ml-auto list-group">
                 <!-- Authentication Links -->
                 @guest
-                    <li><a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="{{ route('login') }}">Autentificare</a></li>
+                    <li><a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="{{ url('/login') }}">Autentificare</a></li>
                     <li><a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="{{ route('register') }}">Inregistrare</a></li>
                     <li><a class="nav-link" href=""><button class="btn btn-sm align-middle btn-info" type="button">Posteaza Anunt</button></a></li>
                 @else
