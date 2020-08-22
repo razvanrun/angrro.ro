@@ -11,6 +11,10 @@
 |
 */
 
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}
+
 // Comon Pages
 Route::get('/termeni', function () {
     return view('termeni');
