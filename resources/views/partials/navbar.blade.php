@@ -34,7 +34,7 @@
                         <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/userdashboard">Gaseste Anunturi<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/profile/{{str_slug(strtolower(Auth::user()->name), '-')}}">Profil</a>
+                        <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="{{url('/profile/{{str_slug(strtolower(Auth::user()->name), '-')}}')}}">Profil</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/my-jobs">Anunturile Mele</a>
@@ -78,7 +78,7 @@
                 <!-- Authentication Links -->
                 @guest
                     <li><a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="{{ url('/login') }}">Autentificare</a></li>
-                    <li><a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="{{ route('register') }}">Inregistrare</a></li>
+                    <li><a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="{{ url('register') }}">Inregistrare</a></li>
                     <li><a class="nav-link" href=""><button class="btn btn-sm align-middle btn-info" type="button">Posteaza Anunt</button></a></li>
                 @else
                     <li class="nav-item dropdown">
@@ -89,13 +89,13 @@
                             @if(Auth::user()->role == 1)
                                 <a href="/dashboard" class="dropdown-item" >Setarile Contului</a>
                             @endif
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                            <a class="dropdown-item" href="{{ url('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
                                 Logout
                             </a>
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            <form id="logout-form" action="{{ url('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
                         </div>
