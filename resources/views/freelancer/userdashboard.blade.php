@@ -31,7 +31,7 @@
 		                    @foreach ($jobs as $job)
 		                <div class="product-listing-container">
   <section class="product-listing-image-box" >
-<img class="product-listing-image" src="{{ asset('storage/assets/image.jpeg') }}" id="product-image"> </li>
+<img class="product-listing-image" src="{{url('public/images',$job->position_type)}}" id="product-image"> </li>
   </section>
   <section class="product-listing-info-box" >
     <ul class="product-listing-details-ul" >

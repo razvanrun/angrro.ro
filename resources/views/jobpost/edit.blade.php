@@ -9,10 +9,10 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10 my-5 editFile">            
+        <div class="col-md-10 my-5 editFile">
             @include('partials.alert')
-            <div class="card card-default">  
-                <div class="card-header"><h3 class="h3 text-center text-info">Edit Job Post</h3></div>
+            <div class="card card-default">
+                <div class="card-header"><h3 class="h3 text-center text-info">Editeaza Anunt</h3></div>
                 <div class="card-body">
                   <form method="POST" id="updateJobForm" action="/jobs/{{ $job->id }}">
                   	{{ csrf_field() }}
@@ -41,15 +41,8 @@
 					  </div>
 					  <div class="row">
 						  <div class="form-group col-md-6">
-						    <label for="positionType">Position Type</label>
-						    <select class="form-control" id="positionType" name="positionType" id="positionType">
-						    	<option disabled value="0">...Select Job Category</option>
-			                    <option value="part-time" {{ $job->position_type == "part-time" ? "selected" : ""}}>Part-Time</option>
-			                   	<option value="full-time" {{ $job->position_type == "full-time" ? "selected" : ""}}>Full-Time</option>
-						    </select>
-						  </div>
 						  <div class="form-group col-md-6">
-						    <label for="project_duration">Project Duration</label>
+						    <label for="project_duration">Stare</label>
 						    <select class="form-control" id="project_duration" name="project_duration" id="project_duration">
 						    	<option disabled value="0">...Select Project Duration</option>
 			                    <option value="Less than 1 week" {{ $job->project_duration == "Less than 1 week" ? "selected" : ""}}>Less than 1 week</option>
@@ -71,10 +64,10 @@
     </div>
 </div>
 @endsection
-@section('jsplugins') 
+@section('jsplugins')
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
   <script>
       CKEDITOR.replace( 'body' );
   </script>
-  
+
 @endsection
