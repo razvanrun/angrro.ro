@@ -128,8 +128,8 @@ class FreelancerController extends Controller
             $image = $request->file('profilepicture');
             $type = pathinfo($image, PATHINFO_EXTENSION);
             $filename = time().'.'.$image->GetClientOriginalExtension();
-            $location = $request->file('profilepicture')->storeAs('images/', $filename);
-            $location = storage_path('images/', $filename);
+            $location = $request->file('profilepicture')->storeAs('public/images', $filename);
+            $location = storage_path('public/images', $filename);
             image::make($image->getRealPath())->resize(128, 128)->save($type, $location);
             $profile->photo = $filename;
         }
