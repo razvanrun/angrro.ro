@@ -9,7 +9,7 @@
                 <div class="card-header bg-info text-center text-white"><h3 class="h3">Autentificare</h3></div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="{{ url('/login') }}">
                         @csrf
 
                         <div class="form-group row">
