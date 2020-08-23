@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Input;
+use App\Job;
 
 /*
 |--------------------------------------------------------------------------
@@ -121,6 +122,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::post ( '/search', function () {
-    $q = Input::get ( 'q' );
-    dd($q);
+    $q = Input::get ('q');
+    if($q != ""){
+        $job = Job::where('title', 'LIKE', '%' . q . '%')
+                      ->orWhere('body', 'LIKE', '%' . q . '%')
+                      ->get();
+        if(count(@job) > 0)
+            return view('userdashboard')->withDetails($job)->withQuery($q);
+    }
+    return view('userdashboard')->withMessage("Nu a fost gasit un anunt!");
 } );
