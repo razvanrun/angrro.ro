@@ -120,7 +120,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Search Controller
 
 
-Route::any ( '/search', function () {
+Route::post ( '/search', function () {
     $q = Input::get ( 'q' );
     dd($q);
 } );
