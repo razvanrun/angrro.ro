@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Input;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -114,3 +116,11 @@ Route::post('/panel/categories/add', 'AdminController@addCategories');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Search Controller
+
+
+Route::any ( '/search', function () {
+    $q = Input::get ( 'q' );
+    dd($q);
+} );

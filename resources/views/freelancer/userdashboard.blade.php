@@ -24,7 +24,7 @@
 </div>
 </div> -->
 
-<form action="/search" method="POST" role="search">
+<form action="{{URL::to('/search')}}" method="POST" role="search">
     {{ csrf_field() }}
     <div class="input-group search">
         <input type="text" class="form-control searchbox" name="q"
