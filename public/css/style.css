@@ -884,6 +884,16 @@ height: 200px;
     }
 }
 
+/* Others Samsung Relatives */
+
+@media screen
+   and (max-width:360px)
+   and (min-width:318px)
+   and (device-height: 718px)  {
+  .container-mobile-category {
+    top: -170px;
+  }
+}​
 
 .term-gap {
   margin-top:100px;
