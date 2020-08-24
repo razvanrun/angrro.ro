@@ -958,7 +958,7 @@ height: 200px;
     top: 1px;
 }
 
-@media only scren (max-width: 600px) {
+@media only scren and (max-width: 600px) {
 .image-job-body {
 max-width: 500px;
 display: flex;
