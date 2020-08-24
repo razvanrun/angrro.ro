@@ -957,3 +957,19 @@ height: 200px;
 .cookie-consent__agree:active {
     top: 1px;
 }
+
+@media only scren (max-width: 600px) {
+.image-job-body {
+max-width: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+ }
+}
+
+.image-job-body {
+width: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+ }
