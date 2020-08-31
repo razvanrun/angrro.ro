@@ -18,7 +18,7 @@
 
            <p class="h5 text-success">Pret: {{number_format($job->budget)}} RON</p>
            {!! $job->body !!}
-          <img class="image-job-body" src={{url('public/images',$job->position_type)}}>  
+          <img class="image-job-body" src={{url('public/images',$job->position_type)}}>
       </div>
         <div class="col-md-3 h6" style="margin-top:170px;">
         	<ul class="list-unstyled">
@@ -28,12 +28,6 @@
         			</span>
         			{{$job->created_at->diffForHumans()}}
         		</li>
-        		<!-- <li class="mb-2">
-        			<span class="text-success">
-        				<i class="fas fa-briefcase"></i> Disponibilitate :
-        			</span>
-        			{{ucwords($job->position_type)}}
-        		</li> -->
         		<li class="mb-2">
         			<span class="text-success">
         				<i class="fas fa-hourglass-end"></i> Stare:
