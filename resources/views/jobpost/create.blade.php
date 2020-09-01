@@ -18,7 +18,7 @@
                   	{{ csrf_field() }}
                   	 <div class="form-group">
 					    <label for="title">Titlul Anuntului</label>
-					    <input type="text" class="form-control" id="title" name="title" placeholder="Exemplu: Vand Fir Pentru Motocoasa">
+					    <input type="text" class="form-control" id="title" name="title" placeholder="Exemplu: iPhone X">
 					  </div>
 					  <div class="form-group">
 					    <label for="article-ckeditor">Descrierea Anuntului</label>
