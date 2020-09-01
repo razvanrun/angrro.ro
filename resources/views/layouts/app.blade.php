@@ -25,7 +25,7 @@
     <link href="{{ asset('css/hover-min.css') }}" rel="stylesheet">
     <!-- Toastr CSS-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
+    <link rel="icon" type="image/png" href="https://i.ibb.co/nsKxnRd/Untitled-2.png">
 
 </head>
 <body>
